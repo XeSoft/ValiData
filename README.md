@@ -4,6 +4,8 @@ A small extensible validation library for F#.
 
 Compatible with Fable. You can define a validation once and use it pretty much anywhere, including the front-end.
 
+No external dependencies.
+
 ## Usage
 
 Here is a basic example.
