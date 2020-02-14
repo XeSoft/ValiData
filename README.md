@@ -106,7 +106,7 @@ Here, the `assert_` line will give an error if the data fails to validate, but e
 
 ## Extending
 
-Simply define your own Ensure module in your project. Any functions you put there will be added to ValiData's Ensure functions. Make sure that the result of your Ensure function's error case returns a list of Errors so it can be easily combined with other errors.
+Simply define your own Ensure module in your project. Any functions you put there will be added to ValiData's Ensure functions. Make sure that your Ensure function's error case returns a list of Errors, so it can be easily combined with other errors.
 
 ```fsharp
 module Ensure =
@@ -116,7 +116,8 @@ module Ensure =
             Error [err i]
         else
             Ok s
-            
+
+
 open ValiData
 
 Ok ...
