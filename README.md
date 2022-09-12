@@ -43,7 +43,7 @@ module User =
             >> Ensure.nonBlank EmailBlank
             >=> Ensure.isEmailLike EmailLooksInvalid
         )
-        // cannot be created as invalid data (won't deserialize)
+        // cannot error
         |> verify x.IsActive Ok
 
         
